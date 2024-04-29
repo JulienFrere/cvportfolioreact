@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@400;600&display=swap');
+
+
+
+.navigation {
+    font: 'Nunito Sans', sans-serif;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  
+      li {
+        margin-right: 20px;
+  
+        a {
+          text-decoration: none;
+          color: #ffffff;
+          font-weight: bold;
+  
+          &.active {
+            color: #ff4500; // couleur pour l'élément actif
+          }
+  
+          &:hover {
+            color: #007bff; // couleur au survol
+          }
+        }
+      }
+    }
+  }
