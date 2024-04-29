@@ -1,0 +1,19 @@
+$textColor: white;
+
+.bg-black {
+    background-color: black; /* Définit la couleur de fond comme noire */
+  }
+  
+ 
+  .text-white {
+    color: white; /* Définit la couleur du texte comme blanc */
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px; // Ajoute un espace de 10 pixels entre les icônes
+  }
+  
+  .icon {
+    color: black; // Change la couleur des icônes en noir
+  }
