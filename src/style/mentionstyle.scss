@@ -1,0 +1,33 @@
+.mention-title{
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: -0.5rem;
+        left: 50%;
+        width: 15rem; 
+        height: 0.25rem; 
+        background-color: #0d6efd; 
+        transform: translateX(-50%);
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: #0d6efd !important;
+    font-weight: 600;
+}
+
+.accordion-body, .unstyle {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    margin-right: 0.2rem;
+}
+

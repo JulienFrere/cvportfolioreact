@@ -1,51 +1,67 @@
-import React from 'react';
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import '../style/Realisationstyle.scss';
-import { Card, Button } from 'react-bootstrap';
-import natureMountains from '../assets/img/nature-montains.jpg';
-import roadChina from '../assets/img/road-china.png';
-import GreenTurtleSea from '../assets/img/green-sea-turtle.png';
+import React from "react";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import "../style/Realisationstyle.scss";
+import { Card, Button } from "react-bootstrap";
+import Banner from "../components/Banner";
+import freshFood from "../assets/img/fresh-food.jpg";
+import espaceBienEtre from "../assets/img//espace-bien-etre.jpg";
+import restaurantJaponais from "../assets/img/restaurant-japonais.jpg";
 
 const Realisations = () => {
   return (
-      <div>
-          <Navigation />
-          <div className="container mt-5"> {/* Ajouter un peu d'espace au-dessus des cartes */}
-          <h2 className="portfolio-title"> PORTFOLIO</h2>
-          <p className="subtitle">Voici quelques unes de mes réalisations.</p>
-              <div className="row">
-                  <div className="col-md-4 mb-4">
-                      <Card className="h-100"> {/* Utiliser la classe "h-100" pour rendre les cartes de hauteur égale */}
-                          <Card.Img variant="top" src={roadChina} alt="Road China"/>
-                          <Card.Body>
-                              <Card.Title>Projet 1</Card.Title>
-                              <Button variant="primary">Voir plus</Button>
-                          </Card.Body>
-                      </Card>
-                  </div>
-                  <div className="col-md-4 mb-4">
-                      <Card className="h-100"> {/* Utiliser la classe "h-100" pour rendre les cartes de hauteur égale */}
-                          <Card.Img variant="top" src={natureMountains} alt="Nature Mountains" />
-                          <Card.Body>
-                              <Card.Title>Projet 2</Card.Title>
-                              <Button variant="primary">Voir plus</Button>
-                          </Card.Body>
-                      </Card>
-                  </div>
-                  <div className="col-md-4 mb-4">
-                      <Card className="h-100"> {/* Utiliser la classe "h-100" pour rendre les cartes de hauteur égale */}
-                          <Card.Img variant="top" src={GreenTurtleSea} alt="Green Turtle Sea"/>
-                          <Card.Body>
-                              <Card.Title>Projet 3</Card.Title>
-                              <Button variant="primary">Voir plus</Button>
-                          </Card.Body>
-                      </Card>
-                  </div>
-              </div>
+    <div>
+      <Navigation />
+      <Banner />
+      <div className="container mt-5">
+        <h2 className="portfolio-title"> PORTFOLIO</h2>
+        <p className="subtitle">Voici quelques-unes de mes réalisations.</p>
+        <div className="articles">
+          <div className="row">
+            <div className="col-md-4 mb-4">
+              <Card className="h-100">
+                {" "}
+                {/* Utiliser la classe "h-100" pour rendre les cartes de hauteur égale */}
+                <Card.Img variant="top" src={freshFood} alt="Fresh Food" />
+                <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+                  <Card.Title className="cardTitle">Fresh food</Card.Title>
+                  <Card.Text className="cardText">Réalisation d'un site avec commande en ligne.</Card.Text>
+                  <Button variant="outline-primary">Voir</Button>
+                </Card.Body>
+                <Card.Footer className="cardFooter">Site réalisé avec PHP et MySQL</Card.Footer>
+              </Card>
+            </div>
+            <div className="col-md-4 mb-4">
+              <Card className="h-100">
+                {" "}
+                {/* Utiliser la classe "h-100" pour rendre les cartes de hauteur égale */}
+                <Card.Img variant="top" src={restaurantJaponais} alt="Restaurant Japonais" />
+                <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+                  <Card.Title className="cardTitle">Restaurant Akira</Card.Title>
+                  <Card.Text className="cardText">Réalisation d'un site vitrine.</Card.Text>
+                  <Button variant="outline-primary">Voir</Button>
+                </Card.Body>
+                <Card.Footer className="cardFooter">Site réalisé avec WoodPress</Card.Footer>
+              </Card>
+            </div>
+            <div className="col-md-4 mb-4">
+              <Card className="h-100">
+                {" "}
+                {/* Utiliser la classe "h-100" pour rendre les cartes de hauteur égale */}
+                <Card.Img variant="top" src={espaceBienEtre} alt="Espace Bien-Etre" />
+                <Card.Body className="d-flex flex-column justify-content-center align-items-center">
+                  <Card.Title className="cardTitle">Espace bien-être</Card.Title>
+                  <Card.Text className="cardText">Réalition d'un site vitrine pour un patricien de bien-être.</Card.Text>
+                  <Button variant="outline-primary">Voir</Button>
+                </Card.Body>
+                <Card.Footer className="cardFooter">Site réalisé en HTML/CSS</Card.Footer>
+              </Card>
+            </div>
           </div>
-          <Footer />
+        </div>
       </div>
+      <Footer />
+    </div>
   );
 };
 

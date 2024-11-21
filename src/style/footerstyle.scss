@@ -1,7 +1,20 @@
 $textColor: white;
 
+footer{
+  background-color: #EEE;
+}
+
+.container{
+  z-index: 2; /* Met le container au-dessus du flou */
+  padding-top: 5rem;
+  }
+
+.p{
+  margin-bottom: 0rem !important;
+}
+
 .bg-black {
-    background-color: black; /* Définit la couleur de fond comme noire */
+    background-color: #000000; /* Définit la couleur de fond comme noire */
   }
   
  
@@ -9,11 +22,32 @@ $textColor: white;
     color: white; /* Définit la couleur du texte comme blanc */
   }
 
-  .social-icons {
-    display: flex;
-    gap: 10px; // Ajoute un espace de 10 pixels entre les icônes
+  .customIcon{
+    color:#000000;
   }
   
-  .icon {
-    color: black; // Change la couleur des icônes en noir
+  .arrowIcon{
+    color: #0d6efd;
   }
+
+.customBullets {
+    position: relative; 
+    left:-1.5rem;
+    list-style-type: none; // Supprime les puces par défaut
+    font-weight: bold;
+  }
+
+    li {
+      
+      a {
+        text-decoration: none; // Supprime la sous-ligne par défaut des liens
+        color: inherit; // Met la couleur du texte par défaut
+        padding-left: 0.2em; 
+
+        &:hover {
+          text-decoration: underline; // Ajoute la sous-ligne lors du survol des liens
+        }
+      }
+    }
+  
+
