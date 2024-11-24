@@ -7,8 +7,8 @@ Node.js
 React.js
 
 Installation
-Cloner le repository : git clone https://github.com/Necron10000/devoir_optimiser_votre_cv_en_ligne_avec_react.js
-Accéder au dossier du projet : cd devoir_optimiser_votre_cv_en_ligne_avec_react.js
+Cloner le repository : git clone (https://github.com/JulienFrere/cvportfolioreact)
+Accéder au dossier du projet : cd cvportfolio
 Installer les dépendances : npm install
 
 Lancement
